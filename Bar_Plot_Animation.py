@@ -48,7 +48,7 @@ def animate(i):  # Animation function
 
 
 ani = animation.FuncAnimation(fig, animate, interval=100, frames=575, repeat=False)  # create animation
-#ani.save('crypto_market_cap.mp4')  # save Animation
-plt.savefig('crypto_cap.png', dpi=600)
+ani.save('crypto_market_cap.mp4')  # save Animation
 plt.show()
+
 
