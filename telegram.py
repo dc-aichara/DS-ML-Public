@@ -1,9 +1,9 @@
 ########################################################################################################################
-# # To get Telegram channel information first you need to follow below steps:                                        # #
+# # To get Telegram group/channel information first you need to follow below steps:                                  # #
 # #   1. Register to telegram using your mobile number                                                               # #
-# #    2. Join the telegram channel about which information be to extracted                                          # #
+# #    2. Join the telegram group/channel about which information be to extracted                                    # #
 # #      3. Create an app at https://my.telegram.org/apps, and note api_id & api_hash of your telegram               # #
-# #                                                                                                                  # #
+# #  Note: You must have admin privileges to extract telegram channel data                                           # #
 ########################################################################################################################
 
 
@@ -70,7 +70,7 @@ df = pd.DataFrame(data)
 messages = df.sort_index(ascending= False)
 
 # ======================================================================================================================
-#                                               Searching for messages which contain specific keyword
+#                                       Searching for messages which contain specific keyword
 # ======================================================================================================================
 # Get messages and timestamps
 messages =[]
