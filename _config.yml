@@ -1,5 +1,6 @@
 theme: jekyll-theme-leap-day
-title: Animation Example
+title: Animation of bar plots in Python
+subtitle: A complete appraoch to make animation bar plots using matplotlib python package
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
