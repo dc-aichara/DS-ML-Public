@@ -7,4 +7,7 @@
 ## 2. Telegram.py
 - Telegram chat data extraction and data processing <br>
 [Medium Tutorial](https://medium.com/@dc.aichara/telegram-channel-data-extraction-users-information-chats-and-specific-messages-and-data-21bb54710fd3)  <br>
-![Daily text count which has keywords bitcoin or btc](images/Bitcoin_text_ts.png)
+
+>An example of telegram chats which contain keyword 'bitcoin' or 'btc'
+
+![](images/Bitcoin_text_ts.png)
