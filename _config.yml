@@ -1,3 +1,14 @@
 theme: jekyll-theme-leap-day
 title: "Data Science And Machine Learning"
-subtitle: "Different codes to perform different tasks"
+footer-links:
+  dribbble: 
+  email: 
+  facebook: 
+  flickr: 
+  github: https://github.com/dc-aichara
+  instagram: 
+  linkedin: 
+  pinterest: 
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: stackexchange
+stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
