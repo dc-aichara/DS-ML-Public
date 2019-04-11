@@ -5,10 +5,10 @@ footer-links:
   email: 
   facebook: 
   flickr: 
-  github: https://github.com/dc-aichara
-  instagram: 
+  github: dc-aichara
+  instagram: dcaichara
   linkedin: 
   pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: stackexchange
+  twitter: dcaichara
 stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
