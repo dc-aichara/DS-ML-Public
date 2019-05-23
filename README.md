@@ -11,3 +11,5 @@
 >An example of telegram chats which contain keyword 'bitcoin' or 'btc'
 
 ![](images/Bitcoin_text_ts.png)
+## 3. lok_sabha_results.py
+- Get [lak sabha election 2019 results](https://results.eci.gov.in/pc/en/partywise/index.htm) using web scraping technique with requests and BeautifulSoup python packages. 
