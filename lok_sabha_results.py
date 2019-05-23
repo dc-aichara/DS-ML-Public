@@ -11,9 +11,9 @@ A = []
 for a in table:
     A.append(a)
 
-last_update = A[55].text
+last_update = A[-1].text
 
-A = A[13:50]
+A = A[13:len(A)-6]
 
 list1 = []
 for i in range(len(A)):
