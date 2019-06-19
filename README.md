@@ -14,7 +14,7 @@
 ## 3. lok_sabha_results.py
 - Get [Lok Sabha elections 2019 results](https://results.eci.gov.in/pc/en/partywise/index.htm) using web scraping technique with requests and BeautifulSoup python packages. 
 
-# My Medium Articles
+## My Medium Articles
 -  [Google Spreadsheets Automation with Python](https://medium.com/@dc.aichara/play-with-google-spreadsheets-with-python-301dd4ee36eb)
 -  [Telegram Group/Channel Data Extraction (User’s information, chats, and specific messages), and Data Processing](https://medium.com/@dc.aichara/telegram-channel-data-extraction-users-information-chats-and-specific-messages-and-data-21bb54710fd3)
 -  [12 Things to know about Jupyter Notebook Markdown](https://medium.com/@dc.aichara/12-things-to-know-about-jupyter-notebook-markdown-3f6cef811707)
