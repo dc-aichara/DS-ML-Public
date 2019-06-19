@@ -1,31 +1,11 @@
 theme: jekyll-theme-leap-day
 title: "Data Science And Machine Learning"
-email: dc.aichara@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-               This project has some python scripts which could be useful to data enthusiast.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dc-aichara.github.io/DS-ML-Public" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: dc_aichara
-github_username:  dc-aichara
-linkedin_username: dcaichara
-instagram_username: dcaichara
+footer-links:
+  twitter_username: dc_aichara
+  github_username:  dc-aichara
+  linkedin_username: dcaichara
+  instagram_username: dcaichara
 
-# Build settings
-markdown: kramdown
-mathjax: true
-theme: minima
-permalink: /:title # removes date from URL
-plugins:
-  - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
+
 
