@@ -1,10 +1,12 @@
 theme: jekyll-theme-leap-day
 title: "Data Science And Machine Learning"
-footer-links:
-  twitter_username: dc_aichara
-  github_username:  dc-aichara
-  linkedin_username: dcaichara
-  instagram_username: dcaichara
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://dc-aichara.github.io/DS-ML-Public/"
+twitter_username: dc_aichara
+github_username:  dc-aichara
+linkedin_username: dcaichara
+instagram_username: dcaichara
 
 
 
