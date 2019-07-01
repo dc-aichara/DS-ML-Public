@@ -18,14 +18,9 @@
 Example: 
 ```python
 >>> tele_btc_messages.head()
-                        time                                            message
-0  2019-06-30 21:53:26+00:00  https://twitter.com/CiziaZyke777/status/114534...
-1  2019-06-26 20:56:02+00:00                             Bitcoin will dominate.
-2  2019-06-21 14:25:18+00:00  Criminals have laundered billions of dirty dol...
-3  2019-06-19 04:50:37+00:00  Did you guys saw this one already? Kucoin just...
-4  2019-06-17 07:40:29+00:00  Has anyone ever heard of Auditchain or DCARPE ...
-
 ```
+![](images/tele_text.png)
+
 ## My Medium Articles
 -  [Google Spreadsheets Automation with Python](https://medium.com/@dc.aichara/play-with-google-spreadsheets-with-python-301dd4ee36eb)
 -  [Telegram Group/Channel Data Extraction (User’s information, chats, and specific messages), and Data Processing](https://medium.com/@dc.aichara/telegram-channel-data-extraction-users-information-chats-and-specific-messages-and-data-21bb54710fd3)
