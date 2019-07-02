@@ -28,8 +28,8 @@ Example:
 
 Example: 
 ```
->>> cd DS-ML-Public
->>> python telegram_user_status.py 12345 fe3922d77g6wgwgwyu35g46c9 bitgrit
+$ cd DS-ML-Public
+$ python telegram_user_status.py 12345 fe3922d77g6wgwgwyu35g46c9 bitgrit
 Number of active users in last 24 hours is 1530.
           User               status
 0  Dayal Chand               online
