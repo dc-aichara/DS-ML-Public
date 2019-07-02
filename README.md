@@ -40,8 +40,6 @@ Number of active users in last 24 hours is 1530.
 
 ```
 
-![](images/tele_text.png)
-
 ## My Medium Articles
 -  [Google Spreadsheets Automation with Python](https://medium.com/@dc.aichara/play-with-google-spreadsheets-with-python-301dd4ee36eb)
 -  [Telegram Group/Channel Data Extraction (User’s information, chats, and specific messages), and Data Processing](https://medium.com/@dc.aichara/telegram-channel-data-extraction-users-information-chats-and-specific-messages-and-data-21bb54710fd3)
