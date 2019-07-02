@@ -38,11 +38,14 @@ def user_status(api_id, api_hash, group_name):
             except:
                 pass
 
-    df = pd.DataFrame({'User':user_name, 'status': user_status})
+    df = pd.DataFrame({'User': user_name, 'status': user_status})
     print('Number of active users in last 24 hours is {}.'.format(df.shape[0]))
     print(df.head(5))
+
+
 def main():
     user_status(int(sys.argv[1]), str(sys.argv[2]), str(sys.argv[3]))
+
 
 if __name__ == '__main__':
     main()
