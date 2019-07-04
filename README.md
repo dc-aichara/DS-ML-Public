@@ -15,6 +15,8 @@
 ![](images/Bitcoin_text_ts.png)
 ## 3. lok_sabha_results.py
 - Get [Lok Sabha elections 2019 results](https://results.eci.gov.in/pc/en/partywise/index.htm) using web scraping technique with requests and BeautifulSoup python packages. 
+
+
 ## 4. Bitcoin_messages_telegram.py
 - Get text messages from telegram groups and channels which contain word 'bitcoin' or 'btc'. <br>
 
