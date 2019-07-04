@@ -1,4 +1,3 @@
-![](images/wordcloud.png)
 
 <img src="images/wordcloud.png">
 
@@ -14,7 +13,8 @@
 
 >An example of telegram chats which contain keyword 'bitcoin' or 'btc'
 
-![](images/Bitcoin_text_ts.png)
+<img src='images/Bitcoin_text_ts.png'>
+
 ## 3. lok_sabha_results.py
 - Get [Lok Sabha elections 2019 results](https://results.eci.gov.in/pc/en/partywise/index.htm) using web scraping technique with requests and BeautifulSoup python packages. 
 
@@ -28,7 +28,8 @@ Example:
 >>> tele_btc_messages.head()
 
 ```
-![](images/tele_text.png)
+<img src='images/tele_text.png'>
+
 ## 5. telegram_user_status.py
 - Use to get users who were online in last 24 hours.
 
@@ -47,9 +48,9 @@ Number of active users in last 24 hours is 1530.
 ```
 
 ## My Medium Articles
--  [Google Spreadsheets Automation with Python](https://medium.com/@dc.aichara/play-with-google-spreadsheets-with-python-301dd4ee36eb)
--  [Telegram Group/Channel Data Extraction (User’s information, chats, and specific messages), and Data Processing](https://medium.com/@dc.aichara/telegram-channel-data-extraction-users-information-chats-and-specific-messages-and-data-21bb54710fd3)
--  [12 Things to know about Jupyter Notebook Markdown](https://medium.com/@dc.aichara/12-things-to-know-about-jupyter-notebook-markdown-3f6cef811707)
--  [Making Animated Bar Plots of Top 16 CryptoCurrencies (Market Capitalization, Price and Volume)](https://medium.com/@dc.aichara/telegram-channel-data-extraction-users-information-chats-and-specific-messages-and-data-21bb54710fd3)
--  [Coin Hopping Attack : How did c0ban (First ICO from Japan) deal with it using LWMA ?](https://medium.com/@dc.aichara/coin-hopping-attack-how-did-c0ban-first-ico-from-japan-deal-with-it-using-lwma-9facda2f02b6)
+-  [Google Spreadsheets Automation with Python](https://medium.com/@dcaichara/play-with-google-spreadsheets-with-python-301dd4ee36eb)
+-  [Telegram Group/Channel Data Extraction (User’s information, chats, and specific messages), and Data Processing](https://medium.com/@dcaichara/telegram-channel-data-extraction-users-information-chats-and-specific-messages-and-data-21bb54710fd3)
+-  [12 Things to know about Jupyter Notebook Markdown](https://medium.com/@dcaichara/12-things-to-know-about-jupyter-notebook-markdown-3f6cef811707)
+-  [Making Animated Bar Plots of Top 16 CryptoCurrencies (Market Capitalization, Price and Volume)](https://medium.com/@dcaichara/telegram-channel-data-extraction-users-information-chats-and-specific-messages-and-data-21bb54710fd3)
+-  [Coin Hopping Attack : How did c0ban (First ICO from Japan) deal with it using LWMA ?](https://medium.com/@dcaichara/coin-hopping-attack-how-did-c0ban-first-ico-from-japan-deal-with-it-using-lwma-9facda2f02b6)
 
