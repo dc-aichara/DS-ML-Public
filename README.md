@@ -1,13 +1,13 @@
 
 <img src="images/wordcloud.png">
 
-## 1.  Bar_Plot_Animation.py 
+## 1. [Bar_Plot_Animation.py ](https://github.com/dc-aichara/DS-ML-Public/blob/master/Bar_Plot_Animation.py)
 - Creates animation of bar plots using matplotlib python package <br>
 [Read complete tutorial on Medium](https://medium.com/@dc.aichara/making-animated-bar-plots-of-top-16-cryptocurrencies-market-capitalization-price-and-volume-7889788af264)<br>
 [Watch animation on YouTube](https://www.youtube.com/watch?v=jqSuaRpCnro) <br>
 [![YouTube Video](http://img.youtube.com/vi/jqSuaRpCnro/0.jpg)](http://www.youtube.com/watch?v=jqSuaRpCnro)
 
-## 2. Telegram.py
+## 2. [Telegram.py](https://github.com/dc-aichara/DS-ML-Public/blob/master/Telegram.py)
 - Telegram chat data extraction and data processing <br>
 [Medium Tutorial](https://medium.com/@dc.aichara/telegram-channel-data-extraction-users-information-chats-and-specific-messages-and-data-21bb54710fd3)  <br>
 
@@ -15,11 +15,11 @@
 
 <img src='images/Bitcoin_text_ts.png'>
 
-## 3. lok_sabha_results.py
+## 3. [lok_sabha_results.py](https://github.com/dc-aichara/DS-ML-Public/blob/master/lok_sabha_results.py)
 - Get [Lok Sabha elections 2019 results](https://results.eci.gov.in/pc/en/partywise/index.htm) using web scraping technique with requests and BeautifulSoup python packages. 
 
 
-## 4. Bitcoin_messages_telegram.py
+## 4. [Bitcoin_messages_telegram.py](https://github.com/dc-aichara/DS-ML-Public/blob/master/Bitcoin_messages_telegram.py)
 - Get text messages from telegram groups and channels which contain word 'bitcoin' or 'btc'. <br>
 
 Example: 
@@ -30,7 +30,7 @@ Example:
 ```
 <img src='images/tele_text.png'>
 
-## 5. telegram_user_status.py
+## 5. [telegram_user_status.py](https://github.com/dc-aichara/DS-ML-Public/blob/master/telegram_user_status.py)
 - Use to get users who were online in last 24 hours.
 
 Example: 
