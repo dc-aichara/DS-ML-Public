@@ -58,7 +58,7 @@ Example hyperparameters optimization results table for LightGBM Regressor on Bos
 
 <img src="images/hyp_lgbm.png">
 
-## My Medium Articles
+## [My Medium Articles](https://medium.com/@dcaichara)
 -  [Google Spreadsheets Automation with Python](https://medium.com/@dcaichara/play-with-google-spreadsheets-with-python-301dd4ee36eb)
 -  [Telegram Group/Channel Data Extraction (User’s information, chats, and specific messages), and Data Processing](https://medium.com/@dcaichara/telegram-channel-data-extraction-users-information-chats-and-specific-messages-and-data-21bb54710fd3)
 -  [12 Things to know about Jupyter Notebook Markdown](https://medium.com/@dcaichara/12-things-to-know-about-jupyter-notebook-markdown-3f6cef811707)
