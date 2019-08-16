@@ -48,13 +48,13 @@ Number of active users in last 24 hours is 1530.
 ```
 *** 
 
-# Medium Notebooks
+# [Medium Notebooks](https://github.com/dc-aichara/DS-ML-Public/tree/master/Medium_Notebooks)
 
-## 1. hyp_tune.ipynb
+## 1. [hyp_tune.ipynb](https://github.com/dc-aichara/DS-ML-Public/blob/master/Medium_Notebooks/hyp_tune.ipynb)
 
 - A notebook to guide hyperparameters optimization using Bayesian model based optimization. 
 
-Example hyperparameters optimization results table for LightGBM Regressor. 
+Example hyperparameters optimization results table for LightGBM Regressor on Boston Housing data. 
 
 <img src="images/hyp_lgbm.png">
 
