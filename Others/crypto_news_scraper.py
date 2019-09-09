@@ -169,3 +169,10 @@ class NewsScrap:
         all_news = pd.concat([n1, n2, n3], axis=0)
         all_news.reset_index(drop=True, inplace=True)
         return all_news
+
+
+"""
+Disclaimer: This code is provided for educational purpose only. It is illegal to scrap webpages which are disallowed
+            to do so. Please, Read robots.txt file before web scraping. robots.txt can be found at website_link/robots.txt.
+            Example: https://cointelegraph.com/robots.txt
+"""
