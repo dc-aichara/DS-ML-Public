@@ -64,6 +64,53 @@ Number of active users in last 24 hours is 1530.
 ## 1. [lok_sabha_results.py](https://github.com/dc-aichara/DS-ML-Public/blob/master/Others/lok_sabha_results.py)
 - Get [Lok Sabha elections 2019 results](https://results.eci.gov.in/pc/en/partywise/index.htm) using web scraping technique with requests and BeautifulSoup python packages. 
 
+## 2. [crypto_news_scraper.py]()
+- Python script to extracted cryptocurries related news from [CoinDesk](https://www.coindesk.com), [Cointelegraph](https://cointelegraph.com) and [cryptonewsz](https://www.cryptonewsz.com). 
+
+### Usages
+$ git clone https://github.com/dc-aichara/DS-ML-Public.git
+$ cd DS-ML-Public/Others
+$ python3 
+
+```python
+>>> from crypto_news_scraper import NewsScrap
+>>> news = NewsScrap()
+>>> df_coindesk = news.CoinDesk_News()
+>>> df_coindesk.head()
+  category                                            heading  ...                time    source
+0     news  Dapp.com Closes $1 Million Investment Round Le...  ... 2019-09-06 22:00:00  CoinDesk
+1     news  Telegram Finally Releases Code for Its $1.7 Bi...  ... 2019-09-06 21:46:00  CoinDesk
+2     news  Massive $1 Billion Bitcoin Whale Transaction M...  ... 2019-09-06 19:00:00  CoinDesk
+3     news  Ethereum Picks Early October for Testnet Activ...  ... 2019-09-06 18:00:00  CoinDesk
+4     news  Dapp Data Site DappRadar Raises $2.33 Million ...  ... 2019-09-06 17:00:00  CoinDesk
+
+[5 rows x 6 columns]
+>>> df_cointelegraph = news.Cointelegraph_News()
+>>> df_cointelegraph.head()
+  category                                            heading  ...                 time         source
+0     News  Crypto and Blockchain Adoption Grows: 5 Import...  ...  2019-09-09 11:15:03  CoinTelegraph
+1     News  World’s ‘First’ Blockchain Smartphone to Becom...  ...  2019-09-09 08:15:03  CoinTelegraph
+2     News  Ethereum's Istanbul Hard Fork Implementation D...  ...  2019-09-09 08:15:03  CoinTelegraph
+3     News  Blockchain Startup DappRadar Raises $2.33M Fro...  ...  2019-09-09 08:15:03  CoinTelegraph
+4     News  Huobi’s Research Arm to Partner with the Unive...  ...  2019-09-09 07:15:03  CoinTelegraph
+
+[5 rows x 6 columns]
+>>> df_all = news.get_all_news()
+Getting news from CoinDesk!!
+Getting news from Cointelegraph!!
+Getting news from cryptonewsz!! This will take 1-2 mintues. 😉
+>>> df_all.head()
+  category                                            heading  ...                 time    source
+0     news  Dapp.com Closes $1 Million Investment Round Le...  ...  2019-09-06 22:00:00  CoinDesk
+1     news  Telegram Finally Releases Code for Its $1.7 Bi...  ...  2019-09-06 21:46:00  CoinDesk
+2     news  Massive $1 Billion Bitcoin Whale Transaction M...  ...  2019-09-06 19:00:00  CoinDesk
+3     news  Ethereum Picks Early October for Testnet Activ...  ...  2019-09-06 18:00:00  CoinDesk
+4     news  Dapp Data Site DappRadar Raises $2.33 Million ...  ...  2019-09-06 17:00:00  CoinDesk
+
+[5 rows x 6 columns]
+
+
+```
 
 ## [My Medium Articles](https://medium.com/@dcaichara)
 -  [Hyperparameters Optimization for LightGBM, CatBoost and XGBoost Regressors using Bayesian Optimization.](https://medium.com/game-of-data/hyperparameters-optimization-for-lightgbm-catboost-and-xgboost-regressors-using-bayesian-6e7c495947a9)
