@@ -64,7 +64,7 @@ Number of active users in last 24 hours is 1530.
 ## 1. [lok_sabha_results.py](https://github.com/dc-aichara/DS-ML-Public/blob/master/Others/lok_sabha_results.py)
 - Get [Lok Sabha elections 2019 results](https://results.eci.gov.in/pc/en/partywise/index.htm) using web scraping technique with requests and BeautifulSoup python packages. 
 
-## 2. [crypto_news_scraper.py]()
+## 2. [crypto_news_scraper.py](https://github.com/dc-aichara/DS-ML-Public/blob/master/Others/crypto_news_scraper.py)
 - Python script to extracted cryptocurries related news from [CoinDesk](https://www.coindesk.com), [Cointelegraph](https://cointelegraph.com) and [cryptonewsz](https://www.cryptonewsz.com). 
 
 ### Usages
