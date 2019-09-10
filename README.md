@@ -68,8 +68,8 @@ Number of active users in last 24 hours is 1530.
 - Python script to extract cryptocurries related news from [CoinDesk](https://www.coindesk.com), [Cointelegraph](https://cointelegraph.com) and [cryptonewsz](https://www.cryptonewsz.com). 
 
 ### Usages
-$ git clone https://github.com/dc-aichara/DS-ML-Public.git
-$ cd DS-ML-Public/WebScrapers
+$ git clone https://github.com/dc-aichara/DS-ML-Public.git <br>
+$ cd DS-ML-Public/WebScrapers <br>
 $ python3 
 
 ```python
@@ -113,8 +113,8 @@ Getting news from cryptonewsz!! This will take 1-2 mintues. 😉
 ## 3. [inshorts_news_scraper.py](https://github.com/dc-aichara/DS-ML-Public/blob/master/WebScrapers/inshorts_news_scraper.py)
 
 ### Usages
-$ git clone https://github.com/dc-aichara/DS-ML-Public.git
-$ cd DS-ML-Public/WebScrapers
+$ git clone https://github.com/dc-aichara/DS-ML-Public.git <br>
+$ cd DS-ML-Public/WebScrapers <br>
 $ python3 
 
 ```python
