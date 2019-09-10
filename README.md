@@ -59,17 +59,17 @@ Number of active users in last 24 hours is 1530.
 ```
 *** 
 
-## Others 
+## WebScrapers 
 
-## 1. [lok_sabha_results.py](https://github.com/dc-aichara/DS-ML-Public/blob/master/Others/lok_sabha_results.py)
+## 1. [lok_sabha_results.py](https://github.com/dc-aichara/DS-ML-Public/blob/master/WebScrapers/lok_sabha_results.py)
 - Get [Lok Sabha elections 2019 results](https://results.eci.gov.in/pc/en/partywise/index.htm) using web scraping technique with requests and BeautifulSoup python packages. 
 
-## 2. [crypto_news_scraper.py](https://github.com/dc-aichara/DS-ML-Public/blob/master/Others/crypto_news_scraper.py)
+## 2. [crypto_news_scraper.py](https://github.com/dc-aichara/DS-ML-Public/blob/master/WebScrapers/crypto_news_scraper.py)
 - Python script to extract cryptocurries related news from [CoinDesk](https://www.coindesk.com), [Cointelegraph](https://cointelegraph.com) and [cryptonewsz](https://www.cryptonewsz.com). 
 
 ### Usages
 $ git clone https://github.com/dc-aichara/DS-ML-Public.git
-$ cd DS-ML-Public/Others
+$ cd DS-ML-Public/WebScrapers
 $ python3 
 
 ```python
@@ -109,7 +109,33 @@ Getting news from cryptonewsz!! This will take 1-2 mintues. 😉
 
 [5 rows x 6 columns]
 
+```
+## 3. [inshorts_news_scraper.py](https://github.com/dc-aichara/DS-ML-Public/blob/master/WebScrapers/inshorts_news_scraper.py)
 
+### Usages
+$ git clone https://github.com/dc-aichara/DS-ML-Public.git
+$ cd DS-ML-Public/WebScrapers
+$ python3 
+
+```python
+>>> from inshorts_news_scraper import InshortsNews
+>>> news = InshortsNews('business')
+>>> df_b = news.get_news()
+>>> df_b.head()
+                                            headings                                               news       short_by                time  category
+0  BSNL plans to fire 30% contract staff unpaid s...  BSNL is reportedly planning to lay off about 3...  Anushka Dixit 2019-09-09 23:35:00  business
+1  SAT overturns SEBI's 2 year-ban on PwC in ₹7,8...  The Securities Appellate Tribunal (SAT) on Mon...  Anushka Dixit 2019-09-09 21:29:00  business
+2  Nissan CEO Hiroto Saikawa to step down on Sept...  Nissan CEO Hiroto Saikawa will step down on Se...         Dharna 2019-09-09 21:08:00  business
+3  British Airways pilots begin 2-day strike over...  British Airways pilots began a two-day strike ...  Anushka Dixit 2019-09-09 20:18:00  business
+4  SEBI making e-voting app for retail investors ...  Markets regulator SEBI is working on an e-voti...         Dharna 2019-09-09 18:04:00  business
+>>> df_all = news.get_all_news()
+>>> df_all.head()
+                                            headings                                               news        short_by                time  category
+0  Conflict between India, Pak less heated now th...  Speaking about tensions between India and Paki...  Arshiya Chopra 2019-09-10 08:50:00  national
+1  Bengaluru woman loses ₹95,000 after calling fa...  A Bengaluru woman lost ₹95,000 after calling a...  Pragya Swastik 2019-09-10 08:25:00  national
+2  IAS officer who resigned is traitor, should go...  BJP MP Anantkumar Hegde has called IAS officer...    Apaar Sharma 2019-09-09 23:28:00  national
+3  Stop drama, stand up, CISF allegedly tells wom...  Virali Modi, a disability rights activist, has...    Anmol Sharma 2019-09-09 23:10:00  national
+4  Tech firms may be allowed to sell users' publi...  India is reportedly mulling guidelines which w...          Dharna 2019-09-09 23:00:00  national
 
 ```
 

@@ -35,8 +35,3 @@ winner_party = df[df['total'] == df['total'].max()]['party'].values[0]
 if df['total'].max() >= 272:
     print("Winning party : ", winner_party, 'with {} seats'.format(df['total'].max()), last_update)
 
-"""
-Disclaimer: This code is provided for educational purpose only. It is illegal to scrap webpages which are disallowed
-            to do so. Please, Read robots.txt file before web scraping. robots.txt can be found at website_link/robots.txt.
- 
-"""
