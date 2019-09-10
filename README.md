@@ -59,7 +59,7 @@ Number of active users in last 24 hours is 1530.
 ```
 *** 
 
-## WebScrapers 
+## [WebScrapers](https://github.com/dc-aichara/DS-ML-Public/tree/master/WebScrapers) 
 
 ## 1. [lok_sabha_results.py](https://github.com/dc-aichara/DS-ML-Public/blob/master/WebScrapers/lok_sabha_results.py)
 - Get [Lok Sabha elections 2019 results](https://results.eci.gov.in/pc/en/partywise/index.htm) using web scraping technique with requests and BeautifulSoup python packages. 
