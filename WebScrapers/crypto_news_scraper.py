@@ -76,7 +76,7 @@ class NewsScrap:
         authors = []
         times = []
         for link in l1:
-            content = requests.get(link).content
+            content = self.__request(link)
             soup1 = BeautifulSoup(content, 'html.parser')
             list1 = [text for text in soup1.find_all('article', attrs={'class': 'coindesk-article'})]
             list1 = [text for text in list1[0].text.replace('\n', ' ').split('  ') if
@@ -109,7 +109,7 @@ class NewsScrap:
         news1 = []
         links = set(links)
         for link in links:
-            content = requests.get(link).content
+            content = self.__request(link)
             soup1 = BeautifulSoup(content, 'html.parser')
             aa = [text.text for text in soup1.find_all('div', attrs={'class': 'entry-content'})]
             news1.append(' '.join(aa[0].split('  ')))
