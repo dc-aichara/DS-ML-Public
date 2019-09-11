@@ -99,7 +99,6 @@ class NewsScrap:
         return df
 
     def cryptonewsz(self):
-        #  url = 'https://www.cryptocompare.com/news/list/latest/'  ---> Need to work on it
         url = 'https://www.cryptonewsz.com/category/cryptocurrency/'
         content = self.__request(url)
         soup = BeautifulSoup(content, 'html.parser')
