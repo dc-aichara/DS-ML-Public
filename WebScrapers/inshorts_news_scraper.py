@@ -55,4 +55,5 @@ class InshortsNews():
         for category in categories:
             data1 = InshortsNews(category).get_news()
             data = pd.concat([data, data1], axis=0)
+        data.reset_index(drop=True, inplace=True)
         return data
