@@ -45,7 +45,7 @@ class InshortsNews():
         data.columns = ['headings', 'news', 'short_by', 'time']
         data.sort_values('time', inplace=True, ascending=False)
         data.reset_index(drop=True, inplace=True)
-        data['category'] = [self.category] * len(data)
+        data['category'] = self.category
         return data
 
     def get_all_news(self):

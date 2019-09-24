@@ -49,7 +49,7 @@ class NewsScrap:
                 return (now - timedelta(hours=num)).strftime(format='%Y-%m-%d %H:%M:%S')
 
         news['time'] = news['time'].apply(get_date)
-        news['source'] = ['CoinTelegraph'] * len(news)
+        news['source'] = 'CoinTelegraph'
         return news
 
     def Cointelegraph_News(self):
@@ -90,7 +90,7 @@ class NewsScrap:
         df.columns = ['category', 'heading', 'news', 'author', 'time']
         df['category'] = df['category'].apply(lambda x: x.replace(' news', 'news'))
 
-        df['source'] = ['CoinDesk'] * len(df)
+        df['source'] = 'CoinDesk'
 
         df['time'] = pd.to_datetime(df['time'].apply(lambda x: ' '.join(x.split('at'))))
         df.sort_values('time', ascending=False, inplace=True)
@@ -155,7 +155,7 @@ class NewsScrap:
 
         data1.sort_values('time', ascending=False, inplace=True)
         data1.reset_index(drop=True, inplace=True)
-        data1['source'] = ['cryptonewsz'] * len(data1)
+        data1['source'] = 'cryptonewsz'
         return data1
 
     def get_all_news(self):
