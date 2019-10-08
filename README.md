@@ -138,6 +138,25 @@ $ python3
 4  Tech firms may be allowed to sell users' publi...  India is reportedly mulling guidelines which w...          Dharna 2019-09-09 23:00:00  national
 
 ```
+## 4. [Japanese News Scraper]()
+
+### Usage:
+```python
+>>> from japanese_news_scraper import JapaneseNewsScrap
+>>> jp_news = JapaneseNewsScrap(24*60*60)
+>>> df_coinpost = jp_news.get_CoinPost_news()
+>>> df_coinpost.head()
+                  time                                         heading  ...                           link    source
+0  2019-10-08 15:30:48              米リップル社、大学ブロックチェーン研究イニシアチブで年次大会を初開催  ...  https://coinpost.jp/?p=111090  CoinPost
+1  2019-10-08 15:29:29                     米NBAのキングス、ファン向けの独自仮想通貨発行を発表  ...  https://coinpost.jp/?p=111088  CoinPost
+2  2019-10-08 14:59:53             金融庁がブロックチェーン実験結果を公表、金融機関の顧客KYC情報を共有  ...  https://coinpost.jp/?p=111189  CoinPost
+3  2019-10-08 14:26:52    Chainlinkの新フレームワーク発表で、仮想通貨LINKが高騰 協賛にIntelなど  ...  https://coinpost.jp/?p=111080  CoinPost
+4  2019-10-08 14:04:36  イーサリアム企業連合、ブロックチェーン仕様の新バージョン発表 「Devcon 5」で検証実施  ...  https://coinpost.jp/?p=111170  CoinPost
+
+[5 rows x 5 columns]
+
+```
+
 
 ## [My Medium Articles](https://medium.com/@dcaichara)
 -  [Hyperparameters Optimization for LightGBM, CatBoost and XGBoost Regressors using Bayesian Optimization.](https://medium.com/game-of-data/hyperparameters-optimization-for-lightgbm-catboost-and-xgboost-regressors-using-bayesian-6e7c495947a9)
