@@ -138,7 +138,7 @@ $ python3
 4  Tech firms may be allowed to sell users' publi...  India is reportedly mulling guidelines which w...          Dharna 2019-09-09 23:00:00  national
 
 ```
-## 4. [Japanese News Scraper]()
+## 4. [Japanese News Scraper](https://github.com/dc-aichara/DS-ML-Public/blob/master/WebScrapers/japanese_news_scraper.py)
 
 ### Usage:
 ```python
