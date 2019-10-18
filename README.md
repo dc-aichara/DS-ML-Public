@@ -164,4 +164,5 @@ $ python3
 -  [Telegram Group/Channel Data Extraction (User’s information, chats, and specific messages), and Data Processing](https://medium.com/@dcaichara/telegram-channel-data-extraction-users-information-chats-and-specific-messages-and-data-21bb54710fd3)
 -  [12 Things to know about Jupyter Notebook Markdown](https://medium.com/@dcaichara/12-things-to-know-about-jupyter-notebook-markdown-3f6cef811707)
 -  [Making Animated Bar Plots of Top 16 CryptoCurrencies (Market Capitalization, Price and Volume)](https://medium.com/@dcaichara/telegram-channel-data-extraction-users-information-chats-and-specific-messages-and-data-21bb54710fd3)
+-  [A Complete Date-Time Guide for Data Scientist in Python](https://medium.com/analytics-vidhya/a-complete-date-time-guide-for-data-scientist-in-python-cd0b1cfb5e74) 
 -  [Coin Hopping Attack : How did c0ban (First ICO from Japan) deal with it using LWMA ?](https://medium.com/@dcaichara/coin-hopping-attack-how-did-c0ban-first-ico-from-japan-deal-with-it-using-lwma-9facda2f02b6)
