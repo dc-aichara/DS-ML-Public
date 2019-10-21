@@ -52,7 +52,7 @@ userdetails = pd.DataFrame(data)
 #                                               Getting Chats
 # ======================================================================================================================
 
-chats =client.get_messages(channel_username[0], n) # n = Number of messages to be extracted
+chats =client.get_messages(channel_username, n) # n = Number of messages to be extracted
 message_id =[]
 message =[]
 sender =[]
