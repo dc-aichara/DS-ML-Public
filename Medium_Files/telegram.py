@@ -46,17 +46,17 @@ if len(participants):
 
 data ={'first_name' :firstname, 'last_name':lastname, 'user_name':username}
 
-userdetails = pd.DataFrame(data)
+df_user = pd.DataFrame(data)
 
 # ======================================================================================================================
 #                                               Getting Chats
 # ======================================================================================================================
 
 chats =client.get_messages(channel_username, n) # n = Number of messages to be extracted
-message_id =[]
-message =[]
-sender =[]
-reply_to =[]
+message_id = []
+message = []
+sender = []
+reply_to = []
 time = []
 if len(chats):
     for chat in chats:
