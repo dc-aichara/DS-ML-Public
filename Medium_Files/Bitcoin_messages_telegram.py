@@ -3,7 +3,7 @@ import pandas as pd
 # ---------------------------------------------------------------------------------------------
 
 api_id = Your Api ID  # integer
-api_hash = Your api hash  # string
+api_hash = 'Your api hash'  # string
 
 channel_username = ['Altcoins','AlunaCrypto','Argenpool','BFU_Cryptochat','BTCFork','BTCPrivate','BitMaxioEnglishOfficial',
                     'BitSharesDEX','BitcoinAirXBA','BitcoinBravado','BitcoinChat','BitcoinCore','BitcoinCore ','BitcoinGPU ',
