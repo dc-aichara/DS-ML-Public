@@ -4,4 +4,4 @@
 - Fit polynomial regression to calculate PM 2.5 slope
 - Save output image
 ## Results
-<img src='slope_pm25.png'>
+<img src='images/slope_pm25.png'>
