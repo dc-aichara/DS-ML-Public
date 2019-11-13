@@ -57,6 +57,11 @@ Number of active users in last 24 hours is 1530.
 4        Billy  2019-07-02 01:32:49
 
 ```
+## 6. [GA.ipynb](https://github.com/dc-aichara/DS-ML-Public/blob/master/Medium_Files/GA.ipynb)
+
+- A  Jupyter Notebook for Google Analytics Reporting API tutorial. 
+
+
 *** 
 
 ## [WebScrapers](https://github.com/dc-aichara/DS-ML-Public/tree/master/WebScrapers) 
