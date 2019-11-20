@@ -79,7 +79,7 @@ class WebScraper:
         data = {'url': [], 'title': [], 'text': []}
 
         tags = ['h1', 'h2', 'h3', 'span', 'li', 'ul', 'section', 'article', 'p']
-        for url in all_urls:
+        for url in set(all_urls):
             try:
                 c = self.__request(url)
                 soup = BeautifulSoup(c, 'html.parser')
