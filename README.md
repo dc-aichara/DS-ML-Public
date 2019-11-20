@@ -161,7 +161,18 @@ $ python3
 [5 rows x 5 columns]
 
 ```
+## [Website Pages Scraper](https://github.com/dc-aichara/DS-ML-Public/blob/master/WebScrapers/website_pages_scraper.py)
 
+- A python script to extract text from pages of given website. 
+
+### Usage:
+
+```python
+>>> from website_pages_scraper import WebScraper
+>>> webscraper = WebScraper(main_page_url='https://www.example.com/')
+>>> df = webscraper.scrap_website(depth=2)
+
+```
 
 ## [My Medium Articles](https://medium.com/@dcaichara)
 -  [Hyperparameters Optimization for LightGBM, CatBoost and XGBoost Regressors using Bayesian Optimization.](https://medium.com/game-of-data/hyperparameters-optimization-for-lightgbm-catboost-and-xgboost-regressors-using-bayesian-6e7c495947a9)
@@ -170,4 +181,5 @@ $ python3
 -  [12 Things to know about Jupyter Notebook Markdown](https://medium.com/@dcaichara/12-things-to-know-about-jupyter-notebook-markdown-3f6cef811707)
 -  [Making Animated Bar Plots of Top 16 CryptoCurrencies (Market Capitalization, Price and Volume)](https://medium.com/@dcaichara/telegram-channel-data-extraction-users-information-chats-and-specific-messages-and-data-21bb54710fd3)
 -  [A Complete Date-Time Guide for Data Scientist in Python](https://medium.com/analytics-vidhya/a-complete-date-time-guide-for-data-scientist-in-python-cd0b1cfb5e74) 
+-  [How to Get Google Analytics Report Data as Pandas DataFrame?](https://medium.com/analytics-vidhya/how-to-get-google-analytics-report-data-as-pandas-dataframe-e3930831fba)
 -  [Coin Hopping Attack : How did c0ban (First ICO from Japan) deal with it using LWMA ?](https://medium.com/@dcaichara/coin-hopping-attack-how-did-c0ban-first-ico-from-japan-deal-with-it-using-lwma-9facda2f02b6)
