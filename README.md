@@ -161,7 +161,7 @@ $ python3
 [5 rows x 5 columns]
 
 ```
-## [Website Pages Scraper](https://github.com/dc-aichara/DS-ML-Public/blob/master/WebScrapers/website_pages_scraper.py)
+## 5. [Website Pages Scraper](https://github.com/dc-aichara/DS-ML-Public/blob/master/WebScrapers/website_pages_scraper.py)
 
 - A python script to extract text from pages of given website. 
 
