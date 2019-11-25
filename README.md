@@ -61,6 +61,9 @@ Number of active users in last 24 hours is 1530.
 
 - A  Jupyter Notebook for Google Analytics Reporting API tutorial. 
 
+## 7. [dashboard_demo](https://github.com/dc-aichara/DS-ML-Public/blob/master/Medium_Files/dashboard_demo/)
+
+- A dashboard demo app  
 
 *** 
 
