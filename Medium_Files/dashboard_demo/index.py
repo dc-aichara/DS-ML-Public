@@ -4,11 +4,12 @@ import flask
 import json
 import dash_html_components as html
 import dash_core_components as dcc
+import dash_daq as daq
 from dash.dependencies import Input, Output
 from datetime import datetime
 import dash_table
 import pandas as pd
-from data import get_coin_data
+from data import get_coin_data, get_coin_price
 from users import users_info
 
 coin_list = ['bitcoin', 'ethereum', 'ripple', 'bitcoin-cash']
@@ -145,6 +146,8 @@ app.layout = html.Div([html.H1("Cryptocurrency Indicators Dashboard",
                                         'vertical-align': 'middle',
                                         }
                                     ),
+                        "Price: $",
+                        html.Div(id='led-display', style={'display': 'inline-block'}),
                         html.Div(id='date-output'),
                         html.Div(id='intermediate-value', style={'display': 'none'}),
                                        ], className="row ",
@@ -181,6 +184,27 @@ app.layout = html.Div([html.H1("Cryptocurrency Indicators Dashboard",
 
      )
 
+
+@app.callback(Output('led-display', 'children'),
+              [Input('dropdown', 'value')])
+def display_price(coin):
+    price = get_coin_price(coin)
+    return daq.LEDDisplay(
+                            label={'label': "", 'style': {'font-size': "14px",
+                                                             'color': 'green',
+                                                             'font-family': 'sans-serif',
+                                                             'background': 'black',
+                                                             'padding': '2px'
+                                                        }
+                                   },
+                            labelPosition='left',
+                            value=str(price),
+                            backgroundColor='black',
+                            size=18,
+                            # family='sans-serif',
+                            style={'display': 'inline-block',
+                                   },
+                        )
 
 def get_data_table(df):
     df['date'] = pd.to_datetime(df['date'])

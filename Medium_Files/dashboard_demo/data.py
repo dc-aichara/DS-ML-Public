@@ -1,6 +1,8 @@
 from PriceIndices import Indices, MarketHistory
 import pandas as pd
 import numpy as np
+from pycoingecko import CoinGeckoAPI
+cg = CoinGeckoAPI()
 history = MarketHistory()
 
 
@@ -34,3 +36,9 @@ def get_coin_data(crypto='bitcoin', start_date='20130428', end_date='20200501', 
         df.to_csv('data.csv', index=False)
         break
     return df
+
+
+def get_coin_price(coin='bitcoin'):
+    price = cg.get_price(ids=coin, vs_currencies='usd')[coin]['usd']
+    return price
+
