@@ -186,3 +186,5 @@ $ python3
 -  [A Complete Date-Time Guide for Data Scientist in Python](https://medium.com/analytics-vidhya/a-complete-date-time-guide-for-data-scientist-in-python-cd0b1cfb5e74) 
 -  [How to Get Google Analytics Report Data as Pandas DataFrame?](https://medium.com/analytics-vidhya/how-to-get-google-analytics-report-data-as-pandas-dataframe-e3930831fba)
 -  [Coin Hopping Attack : How did c0ban (First ICO from Japan) deal with it using LWMA ?](https://medium.com/@dcaichara/coin-hopping-attack-how-did-c0ban-first-ico-from-japan-deal-with-it-using-lwma-9facda2f02b6)
+-  [Building a Dashboard App using Plotly’s Dash: A Complete Guide from Beginner to Pro-1](https://medium.com/analytics-vidhya/building-a-dashboard-app-using-plotlys-dash-a-complete-guide-from-beginner-to-pro-61e890bdc423)
+-  [Building a Dashboard App using Plotly’s Dash: A Complete Guide from Beginner to Pro-2](https://medium.com/analytics-vidhya/building-a-dashboard-app-using-plotlys-dash-a-complete-guide-from-beginner-to-pro-e7657a4eb707)
