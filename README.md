@@ -83,7 +83,7 @@ $ python3
 ```python
 >>> from crypto_news_scraper import NewsScrap
 >>> news = NewsScrap()
->>> df_coindesk = news.CoinDesk_News()
+>>> df_coindesk = news.coin_desk_news()
 >>> df_coindesk.head()
   category                                            heading  ...                time    source
 0     news  Dapp.com Closes $1 Million Investment Round Le...  ... 2019-09-06 22:00:00  CoinDesk
@@ -93,7 +93,7 @@ $ python3
 4     news  Dapp Data Site DappRadar Raises $2.33 Million ...  ... 2019-09-06 17:00:00  CoinDesk
 
 [5 rows x 6 columns]
->>> df_cointelegraph = news.Cointelegraph_News()
+>>> df_cointelegraph = news.cointelegraph_news()
 >>> df_cointelegraph.head()
   category                                            heading  ...                 time         source
 0     News  Crypto and Blockchain Adoption Grows: 5 Import...  ...  2019-09-09 11:15:03  CoinTelegraph
@@ -152,7 +152,7 @@ $ python3
 ```python
 >>> from japanese_news_scraper import JapaneseNewsScrap
 >>> jp_news = JapaneseNewsScrap(24*60*60)
->>> df_coinpost = jp_news.get_CoinPost_news()
+>>> df_coinpost = jp_news.get_coin_post_news()
 >>> df_coinpost.head()
                   time                                         heading  ...                           link    source
 0  2019-10-08 15:30:48              米リップル社、大学ブロックチェーン研究イニシアチブで年次大会を初開催  ...  https://coinpost.jp/?p=111090  CoinPost
