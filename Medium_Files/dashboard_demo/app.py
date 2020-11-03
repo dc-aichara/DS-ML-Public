@@ -21,12 +21,12 @@ app.index_string = """<!DOCTYPE html>
 <html>
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/ns.html?id=GTM-TPS5QTN"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TPS5QTN"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', '251089107');
+        gtag('config', '251120430');
         </script>
         {%metas%}
         <title>{%title%}</title>
