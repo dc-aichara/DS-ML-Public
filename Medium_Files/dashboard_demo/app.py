@@ -11,7 +11,6 @@ app.title = "Cryptocurrency Indicators Dashboard"
 app.description = """A dashboard to display price indicators for Bitcoin, 
                   Ethereum, Ripple, and Bitcoin-cash."""
 
-
 ########################################################################
 #
 #  For Google Analytics
@@ -21,12 +20,13 @@ app.index_string = """<!DOCTYPE html>
 <html>
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TPS5QTN"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-15C7GNBCP3"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '251120430');
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-15C7GNBCP3');
         </script>
         {%metas%}
         <title>{%title%}</title>
