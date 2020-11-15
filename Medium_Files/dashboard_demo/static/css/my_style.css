@@ -1,0 +1,69 @@
+
+table {
+margin-left: 1px;
+margin-right: 1px;
+border-collapse: collapse;
+width: 100%;
+font-size: 20px;
+color:orange
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #B8A29D;
+  color: #130635;
+}
+tr:hover {
+background-color:#7fc0c3;
+color: blue;
+font-size: 14px;
+}
+
+
+h1 {
+margin:0px;
+}
+
+.auth{
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    position: right;
+    background-color: #fff5f5;
+    box-shadow: 2px 2px 2px lightgrey;
+    line-height: 1.2;
+    width: 98%;
+}
+
+.all-tabs-inline {
+    height: 50px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    background-color: #b59898;
+    vertical-align: middle;
+    width: 98%;
+}
+
+.selectors {
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    box-shadow: 3px 3px 3px #d4bebe;
+    line-height: 1;
+    background: #DCD5D3;
+    width: 98%;
+}
+
+.graph-display {
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 2px lightgrey;
+    line-height: .9;
+}

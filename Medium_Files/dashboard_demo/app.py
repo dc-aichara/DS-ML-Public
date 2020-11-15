@@ -1,6 +1,9 @@
 import dash
 
-external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
+external_stylesheets = [
+    "static/css/my_style.css",
+    "https://codepen.io/chriddyp/pen/bWLwgP.css",
+]
 app = dash.Dash(
     "Cryptocurrency Indicators Dashboard",
     external_stylesheets=external_stylesheets,
@@ -10,6 +13,7 @@ app.config.suppress_callback_exceptions = True
 app.title = "Cryptocurrency Indicators Dashboard"
 app.description = """A dashboard to display price indicators for Bitcoin, 
                   Ethereum, Ripple, and Bitcoin-cash."""
+
 
 ########################################################################
 #
@@ -25,7 +29,7 @@ app.index_string = """<!DOCTYPE html>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
+        
           gtag('config', 'G-15C7GNBCP3');
         </script>
         {%metas%}
