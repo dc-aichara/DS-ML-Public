@@ -14,20 +14,22 @@ from users import users_info
 
 coin_list = ["bitcoin", "ethereum", "ripple", "bitcoin-cash"]
 
-colors = {"background": "#4A235A", "background2": "black", "text": "yellow"}
+colors = {"background": "white", "background2": "#D0D3D4", "text": "#263a90"}
 tabs_styles = {"height": "51px"}
 tab_style = {
     "borderBottom": "1px solid #d6d6d6",
     "padding": "2px",
     "fontWeight": "bold",
+    "vertical-align": "middle",
 }
 
 tab_selected_style = {
     "borderTop": "1px solid #d6d6d6",
     "borderBottom": "1px solid #d6d6d6",
-    "backgroundColor": "black",
-    "color": "yellow",
-    "padding": "10px",
+    "backgroundColor": "white",
+    "color": "blue",
+    "padding": "5px",
+    "font-size": 15,
 }
 
 y_axis = {
@@ -77,9 +79,8 @@ login_form = html.Div(
         html.Form(
             [
                 dcc.Input(placeholder="username", name="username", type="text"),
-                dcc.Input(
-                    placeholder="password", name="password", type="password"
-                ),
+                dcc.Input(placeholder="password", name="password",
+                          type="password"),
                 html.Button("Login", type="submit"),
             ],
             action="/login",
@@ -102,12 +103,18 @@ app.layout = html.Div(
     [
         html.H1(
             "Cryptocurrency Indicators Dashboard",
-            style={"textAlign": "center", "background": "yellow"},
+            style={"textAlign": "center",
+                   "color": "white",
+                   # "background": "yellow"
+                   },
         ),
         html.Div(id="custom-auth-frame"),  # Input for buttons
         html.Div(
+            className="auth",
             id="custom-auth-frame-1",  # Output after Login or Logout
-            style={"textAlign": "right", "background": "black",},
+            # style={"textAlign": "right",
+            #        "background": "black",
+            #        },
         ),
         html.Div(
             [
@@ -158,7 +165,7 @@ app.layout = html.Div(
                 html.Div(id="date-output"),
                 html.Div(id="intermediate-value", style={"display": "none"}),
             ],
-            className="row ",
+            className="selectors",
             style={
                 "marginTop": 0,
                 "marginBottom": 0,
@@ -169,6 +176,7 @@ app.layout = html.Div(
         ),
         dcc.Tabs(
             id="all-tabs-inline",
+            className="all-tabs-inline",
             value="tab-1",
             children=[
                 dcc.Tab(
@@ -209,13 +217,10 @@ app.layout = html.Div(
                 ),
             ],
             style=tabs_styles,
-            colors={
-                "border": "yellow",
-                "primary": "red",
-                "background": "orange",
-            },
+            colors={"border": "yellow", "primary": "red",
+                    "background": "orange", },
         ),
-        html.Div(id="graph-output"),
+        html.Div(id="graph-output", className="graph-display"),
         html.Div(
             children=[
                 html.H1(
@@ -224,9 +229,8 @@ app.layout = html.Div(
                 )
             ]
         ),
-        html.Div(
-            children=[html.Table(id="table"), html.Div(id="table-output")]
-        ),
+        html.Div(className="data-table",
+            children=[html.Table(id="table"), html.Div(id="table-output")]),
         html.Div(
             children=[
                 dcc.Markdown(  # markdown
@@ -259,7 +263,7 @@ def display_price(coin):
         backgroundColor="black",
         size=18,
         # family='sans-serif',
-        style={"display": "inline-block",},
+        style={"display": "inline-block", },
     )
 
 
@@ -272,17 +276,14 @@ def get_data_table(df):
         style_table={"overflowY": "scroll"},
         fixed_rows={"headers": True, "data": 10},
         style_cell={"width": "100px"},
-        style_header={
-            "backgroundColor": "rgb(230, 230, 230)",
-            "fontWeight": "bold",
-        },
+        style_header={"backgroundColor": "rgb(230, 230, 230)",
+                      "fontWeight": "bold", },
     )
     return data_table
 
 
-@app.callback(
-    Output("intermediate-value", "children"), [Input("dropdown", "value")]
-)
+@app.callback(Output("intermediate-value", "children"),
+              [Input("dropdown", "value")])
 def get_data(option):
     df = get_coin_data(crypto=option, save_data=None)
     return df.to_json(date_format="iso", orient="split")
@@ -309,8 +310,7 @@ def render_content(data, tab, start_date, end_date):
         return [
             html.Div(
                 html.H2(
-                    "Charts will be displayed here after user's authentication."
-                ),
+                    "Charts will be displayed here after user's authentication."),
                 style={"textAlign": "center", "color": "red"},
             ),
             "",
@@ -364,10 +364,8 @@ def render_content(data, tab, start_date, end_date):
                                     "yaxis": y_axis,
                                     "plot_bgcolor": colors["background2"],
                                     "paper_bgcolor": colors["background"],
-                                    "font": {
-                                        "color": colors["text"],
-                                        "size": 18,
-                                    },
+                                    "font": {"color": colors["text"],
+                                             "size": 18, },
                                 },
                             },
                         )
@@ -401,10 +399,8 @@ def render_content(data, tab, start_date, end_date):
                                     "height": 700,
                                     "plot_bgcolor": colors["background2"],
                                     "paper_bgcolor": colors["background"],
-                                    "font": {
-                                        "color": colors["text"],
-                                        "size": 18,
-                                    },
+                                    "font": {"color": colors["text"],
+                                             "size": 18, },
                                     "legend": {"x": 1.04, "y": 1.04},
                                     "xaxis": x_axis,
                                     "yaxis": y_axis,
@@ -452,10 +448,8 @@ def render_content(data, tab, start_date, end_date):
                                     "height": 700,
                                     "plot_bgcolor": colors["background2"],
                                     "paper_bgcolor": colors["background"],
-                                    "font": {
-                                        "color": colors["text"],
-                                        "size": 18,
-                                    },
+                                    "font": {"color": colors["text"],
+                                             "size": 18, },
                                     "legend": {"x": 1.04, "y": 1.04},
                                     "xaxis": x_axis,
                                     "yaxis": y_axis,
@@ -503,10 +497,8 @@ def render_content(data, tab, start_date, end_date):
                                     "height": 700,
                                     "plot_bgcolor": colors["background2"],
                                     "paper_bgcolor": colors["background"],
-                                    "font": {
-                                        "color": colors["text"],
-                                        "size": 18,
-                                    },
+                                    "font": {"color": colors["text"],
+                                             "size": 18, },
                                     "legend": {"x": 1.04, "y": 1.04},
                                     "xaxis": x_axis,
                                     "yaxis": y_axis,
@@ -561,10 +553,8 @@ def render_content(data, tab, start_date, end_date):
                                     "yaxis": y_axis,
                                     "plot_bgcolor": colors["background2"],
                                     "paper_bgcolor": colors["background"],
-                                    "font": {
-                                        "color": colors["text"],
-                                        "size": 18,
-                                    },
+                                    "font": {"color": colors["text"],
+                                             "size": 18, },
                                 },
                             },
                         )
@@ -605,10 +595,8 @@ def render_content(data, tab, start_date, end_date):
                                     "yaxis": y_axis,
                                     "plot_bgcolor": colors["background2"],
                                     "paper_bgcolor": colors["background"],
-                                    "font": {
-                                        "color": colors["text"],
-                                        "size": 18,
-                                    },
+                                    "font": {"color": colors["text"],
+                                             "size": 18, },
                                 },
                             },
                         )
