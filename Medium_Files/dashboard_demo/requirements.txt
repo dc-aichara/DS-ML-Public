@@ -5,7 +5,7 @@ dash-daq==0.4.0
 dash-html-components==1.0.2
 dash-renderer==1.2.4
 dash-table==4.6.1
-Flask==1.1.2
+Flask==2.3.2
 gunicorn==19.9.0
 numpy==1.15.4
 pandas==0.23.4
