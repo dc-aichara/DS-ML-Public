@@ -7,7 +7,7 @@ dash-renderer==1.2.4
 dash-table==4.6.1
 Flask==1.1.2
 gunicorn==19.9.0
-numpy==1.15.4
+numpy==1.22.0
 pandas==0.23.4
 plotly==4.5.4
 PriceIndices==1.2.1
