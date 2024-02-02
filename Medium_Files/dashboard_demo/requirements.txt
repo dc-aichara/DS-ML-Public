@@ -1,4 +1,4 @@
-dash==1.9.1
+dash==2.15.0
 dash-auth==1.4.1
 dash-core-components==1.8.1
 dash-daq==0.4.0
